@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ---
-
+Note: All previous versions (FLAREclient 2.0.2 and FLAREclient 2.0.3) have been deprecated, and are no longer supported.
 ## FLAREclient Version 2.0.4
 ### December 14th, 2015 - Release Changelog
 
