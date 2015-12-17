@@ -42,8 +42,7 @@ import com.bcmcgroup.flare.client.ClientUtil;
 import com.sun.net.httpserver.HttpExchange;
 
 /**
- * @author		Mark Walters <mwalters@bcmcgroup.com>
- * @version		2.0
+ * @version		2.0.4
  */
 public class StatusMessage {
 	private static final Logger logger = Logger.getLogger(StatusMessage.class);
@@ -60,7 +59,7 @@ public class StatusMessage {
 	 * @param mI String containing the attribute "message_id"
 	 * @param iRT String containing the attribute "in_response_to"
 	 * @param sT String containing the attribute "status_type"
-	 * @param sD Set<String> containing the elements for "Status_Detail"
+	 * @param sD Set of Strings containing the elements for "Status_Detail"
 	 * @param m String containing the Element "Message"
 	 */
 	public StatusMessage(String mI, String iRT, String sT, HashMap<String,String> sD, String m) {

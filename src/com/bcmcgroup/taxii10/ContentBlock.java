@@ -34,8 +34,7 @@ import org.xml.sax.SAXException;
 import com.bcmcgroup.flare.client.ClientUtil;
 
 /**
- * @author		Mark Walters <mwalters@bcmcgroup.com>
- * @version		2.0
+ * @version		2.0.4
  */
 public class ContentBlock {
 	private static final Logger logger = Logger.getLogger(ContentBlock.class);
@@ -72,6 +71,7 @@ public class ContentBlock {
 	 * @param timestampLabel String containing Timestamp_Label
 	 * @param padding String containing Padding
 	 * @param digitalSignature ds:Signature Node object
+	 * @throws IOException if cannot find the File being passed as second parameter
 	 */
 	public ContentBlock(String contentBinding, File file, String timestampLabel, String padding, Node digitalSignature) throws IOException {
 		content_binding = contentBinding;

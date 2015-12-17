@@ -58,11 +58,7 @@ import com.bcmcgroup.flare.xmldsig.MyURIDereferencer;
 
 /**
  * This class is used to provide convenient methods to digitally sign an XML document.
- *
- * @author		David Du <ddu@bcmcgroup.com>
- * @author		Mark Walters <mwalters@bcmcgroup.com>
- * @version		2.0
- *
+ * @version		2.0.4
  */
 public class Xmldsig {
 	private static final Logger logger = Logger.getLogger(Xmldsig.class);
@@ -209,6 +205,7 @@ public class Xmldsig {
 	 * @param keyStorePath a String containing the path to the KeyStore
 	 * @param keyStorePW a String containing the KeyStore password
 	 * @param verifyAlias a String containing the alias of the public key used for verification
+	 * @return True if signature passes verification, False otherwise
 	 */
 	public static boolean verifySignature(Document doc, String keyStorePath, String keyStorePW, String verifyAlias) {
         boolean coreValidation = false;

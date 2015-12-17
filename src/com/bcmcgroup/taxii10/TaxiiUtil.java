@@ -67,7 +67,8 @@ public class TaxiiUtil {
 	 * @param message text for the Message tag
 	 * @param sourceSubscription a HashMap containing all Source_Subscription attributes and tags (feed_name, subscription_id, Inclusive_Begin_Timestamp, Inclusive_End_Timestamp)
 	 * @param contentBlocks an ArrayList of ContentBlock objects
-	 * 
+	 * @return a Document object with the given parameters. The document will represent a TAXII Inbox Message.
+	 *
 	 * Usage Example:
 	 *   Document im = inboxMessage("12345", null, "Here is my message", null, contentBlocks);
 	 */
@@ -146,6 +147,7 @@ public class TaxiiUtil {
 	 * @param bTime the Exclusive_Begin_Timestamp value
 	 * @param eTime the Inclusive_End_Timestamp value
 	 * @param cBind set of acceptable Content Bindings for this request
+	 * @return a Document object with the given parameters. The document will represent a TAXII poll request.
 	 * 
 	 * Usage Example:
 	 *   Document pr = pollRequest("12345", "myFeed", "12345678-90ab-cdef-1234-567890abcdef", null, "2014-05-24T22:23:00.000000Z", null, null);

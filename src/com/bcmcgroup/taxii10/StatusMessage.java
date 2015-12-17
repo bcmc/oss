@@ -39,8 +39,7 @@ import com.bcmcgroup.flare.client.ClientUtil;
 import com.sun.net.httpserver.HttpExchange;
 
 /**
- * @author		Mark Walters <mwalters@bcmcgroup.com>
- * @version		2.0
+ * @version		2.0.4
  */
 public class StatusMessage {
 	private static final Logger logger = Logger.getLogger(StatusMessage.class);

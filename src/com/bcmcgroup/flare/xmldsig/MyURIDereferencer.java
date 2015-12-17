@@ -38,10 +38,7 @@ import com.bcmcgroup.flare.xmldsig.MyURIDereferencer;
 
 /**
  * This class is used to implement a custom URIDereferencer for Xmldsig.sign()
- *
- * @author		Mark Walters <mwalters@bcmcgroup.com>
- * @version		2.0
- *
+ * @version		2.0.4
  */
 
 class MyURIDereferencer implements URIDereferencer {

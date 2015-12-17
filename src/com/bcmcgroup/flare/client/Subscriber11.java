@@ -273,13 +273,6 @@ public class Subscriber11 {
      *
      * @param taxiiDoc a TAXII 1.1 compliant Document object
      * @param fileName file name to save as [default is timestamp]
-     *                 <p/>
-     *                 Usage Example:
-     *                 Subscriber11 sub = new Subscriber11();
-     *                 File taxiiMessage = new File("taxiimsg.xml");
-     *                 DocumentBuilder db = ClientUtil.generateDocumentBuilder();
-     *                 Document taxiiDoc = db.parse(taxiiMessage);
-     *                 sub.save(taxiiDoc, null);
      */
     public void save(Document taxiiDoc, String fileName) {
         Properties config = ClientUtil.loadProperties();

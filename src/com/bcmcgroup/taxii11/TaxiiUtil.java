@@ -295,7 +295,7 @@ public class TaxiiUtil {
 	 * @param iRT the in_response_to attribute
 	 * @param extHdrs a HashMap containing all extended headers (can be null)
 	 * @param serviceList an ArrayList containing ServiceInstance objects
-	 * 
+	 * @return a Document object representing a TAXII Discovery Response
 	 * Usage Example:
 	 *   Document dr = discoveryResponse("12345", "67890", null);
 	 */
@@ -352,7 +352,7 @@ public class TaxiiUtil {
 	
 	/**
 	 * Get Service Instance List for Discovery_Response
-	 * @return an ArrayList<ServiceInstance> containing service instances
+	 * @return an ArrayList of service instances
 	 */
 	public static ArrayList<ServiceInstance> getServiceList() {
 		ArrayList<ServiceInstance> returnList = new ArrayList<>();
@@ -393,7 +393,7 @@ public class TaxiiUtil {
 	 * @param sourceSubscription a HashMap containing all Source_Subscription attributes and tags (collection_name, Subscription_ID, Exclusive_Begin_Timestamp, Inclusive_End_Timestamp)
 	 * @param recordCount a RecordCount object containing info for the Record_Count tag
 	 * @param contentBlocks an ArrayList of ContentBlock objects
-	 * 
+	 * @return a Document object representing a TAXII Inbox Message
 	 * Usage Example:
 	 *   Document im = inboxMessage("12345", null, "Here is my message", null, contentBlocks);
 	 */
@@ -497,6 +497,7 @@ public class TaxiiUtil {
 	 * @param extHdrs a HashMap containing all extended headers (can be null)
 	 * @param ebt the Exclusive_Begin_Timestamp value
 	 * @param iet the Inclusive_End_Timestamp value
+	 * @return a Document object representing a TAXII Poll request
 	 * 
 	 * Usage Example:
 	 *   Document pr = pollRequest("12345", "myCollection", "12345678-90ab-cdef-1234-567890abcdef", null, "2014-05-24T22:23:00.000000Z", null);
@@ -567,9 +568,8 @@ public class TaxiiUtil {
 	 * @param extHdrs a HashMap containing all extended headers (can be null)
 	 * @param ebt the Exclusive_Begin_Timestamp value
 	 * @param iet the Inclusive_End_Timestamp value
-	 * 
-	 * Usage Example:
-	 *   Document pr = pollRequest("12345", "myCollection", null, "2014-05-24T22:23:00.000000Z", null);
+	 * @param pp Poll parameters to be used
+	 * @return a Document object representing a TAXII Poll Request
 	 */
 	public static Document pollRequest(String msgId, String cN, HashMap<String,String> extHdrs, String ebt, String iet, PollParameters pp) {
 		DocumentBuilder db = ClientUtil.generateDocumentBuilder();

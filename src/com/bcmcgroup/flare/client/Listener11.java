@@ -64,8 +64,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 /**
- * @author		Mark Walters <mwalters@bcmcgroup.com>
- * @version		2.0
+ * @version		2.0.4
  */
 class Listener11 {
 
