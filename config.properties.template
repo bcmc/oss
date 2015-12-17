@@ -1,0 +1,32 @@
+# general
+clientVersion=2.0.3
+connectingToFLARE=true
+taxii10NS=http\://taxii.mitre.org/messages/taxii_xml_binding-1
+taxii11NS=http\://taxii.mitre.org/messages/taxii_xml_binding-1.1
+taxiiQuery10NS=http\://taxii.mitre.org/query/taxii_default_query-1
+taxii10serverUrlInbox=https\://FLAREgateway\:8443/flare/taxii/inbox
+taxii10serverUrlPoll=https\://FLAREgateway\:8443/flare/taxii/poll
+taxii11serverUrlInbox=https\://FLAREgateway\:8443/flare/taxii11/inbox
+taxii11serverUrlPoll=https\://FLAREgateway\:8443/flare/taxii11/poll
+httpHeaderUserAgent=FLAREclient application
+httpHeaderContentType=application/xml
+httpHeaderAccept=application/xml
+pathToTrustStore=lib/FLAREclient.jks
+trustStorePassword=
+basePath=
+sslDebug=false
+
+# publisher
+pathToPublisherKeyStore=lib/FLAREclient.jks
+publisherKeyStorePassword=
+publisherKeyName=client
+publisherKeyPassword=
+stix_cB=urn\:stix.mitre.org\:xml\:1.1.1
+
+# subscriber
+pathToSubscriberKeyStore=lib/FLAREclient.jks
+subscriberKeyStorePassword=
+listenerEndpoint=/
+verifyDS=true
+verifyAlias=FLAREdsig
+#feedName_subId=12345678-90ab-cdef-1234-567890abcdef

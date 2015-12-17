@@ -1,0 +1,4 @@
+/target
+.idea
+lib/FLAREclient.jks
+*.DS_STORE
