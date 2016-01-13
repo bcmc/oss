@@ -161,11 +161,14 @@ public class Subscriber10 {
         Boolean verifyStatus = false;
         if ("true".equalsIgnoreCase(verifyDS)) {
             verifyStatus = Xmldsig.verifySignature(responseDoc, pathToTrustStore, trustStorePassword, verifyAlias);
+            logger.debug("Digital Signature Validation: " + verifyStatus);
+            if (!verifyStatus) {
+                return;
+            }
+        } else {
+            logger.debug("Digital Signature Validation skipped...");
         }
-        logger.debug("Digital Signature Validation: " + verifyStatus);
-        if (!verifyStatus) {
-            return;
-        }
+
 
         // TAXII Validation on the response.
         TaxiiValidator taxiiValidator;
