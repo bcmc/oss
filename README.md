@@ -13,9 +13,18 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
+<br>
+
 ---
 
-**Note: All previous versions of FLAREclient (2.0.1—2.0.3) have been deprecated, and are no longer supported.**
+
+! Note: This version of FLAREclient requires **_Oracle JDK 1.8_**, due to a known SSL issue with OpenJDK. All previous versions of FLAREclient (2.0.1—2.0.3) have been deprecated, and are no longer supported.
+
+
+---
+
+<br>
+
 ## FLAREclient Version 2.0.4
 ### December 14th, 2015 - Release Changelog
 
