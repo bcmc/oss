@@ -33,9 +33,9 @@
                              
 ##Installation Summary
 ```bash
-- Install scripts & crontabs onto your MISP and Flare servers               
-- Need help with crontabs?  Try: https://crontab.guru/                   
-- The below will execute the scripts at 2:30am daily and log all output
+            + Install scripts & crontabs onto your MISP and Flare servers               
+                    + Need help with crontabs?  Try: https://crontab.guru/                   
+            + The below will execute the scripts at 2:30am daily and log all output
 ```
                                
 ##FLARE Installation
