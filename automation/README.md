@@ -14,14 +14,14 @@
  + *Scripts are simply a working POC and written to only support TAXII 1.1*       
  + Author: Cory Kennedy (@corykennedy)                                          
 
-                         ``` _____  .___  _________                           
-                            /  _  \ |   |/   _____/                           
-                           /  /_\  \|   |\_____  \                            
-                          /    |    \   |/        \                           
-                          \____|__  /___/___v1.0_  /                          
-                                  \/            \/                            
-                                      AIS Automation
-                         ```                                   
+                                   _____  .___  _________                           
+                                  /  _  \ |   |/   _____/                           
+                                 /  /_\  \|   |\_____  \                            
+                                /    |    \   |/        \                           
+                                \____|__  /___/___v1.0_  /                          
+                                        \/            \/                            
+                                                  AIS Automation
+                                                         
 - Installation Summary
 .. Install scripts & crontabs onto your MISP and Flare servers               
 .. Need help with crontabs?  Try: https://crontab.guru/                   
