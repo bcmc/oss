@@ -28,7 +28,7 @@
             + Active AIS Participation | https://www.us-cert.gov/ais                    
             + Working Flare instance   | https://github.com/bcmc/oss
             + Working MISP instance    | https://github.com/MISP/MISP                      
-            + Working CTI-Toolkit      | https://github.com/certau/cti-toolkit.git (Installed on MISP server)
+            + Working CTI-Toolkit      | https://github.com/certau/cti-toolkit.git (MISP server)
 ```
                              
 ##Installation Summary
@@ -54,7 +54,7 @@ Step 3: Install crontabs
 
     export VISUAL=nano; crontab -e
 
-Example filename - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
+Example  - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
 
      30 2 * * * /opt/Flare/scripts/CISCP.sh &>/opt/Flare/scripts/logs/CISCP_`date +\%y-\%m-\%d`.out
      32 2 * * * /opt/Flare/scripts/AIS.sh &>/opt/Flare/scripts/logs/AIS_`date +\%y-\%m-\%d`.out
@@ -78,7 +78,7 @@ Step 3: Install crontabs
 
     export VISUAL=nano; crontab -e
 
-Example filename - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
+Example  - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
 
     30 2 * * * /home/misp/scripts/MISP.sh
 
