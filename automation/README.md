@@ -17,7 +17,7 @@
  /  /_\  \|   |\_____  \                            
 /    |    \   |/        \    Author: Cory Kennedy (@corykennedy)                       
 \____|__  /___/___v1.0_  /                          
-        \/            \/                            
+        \/  AUTOMISPER \/                            
                    
                            + Automation can also be used as standalone scripts                          
                            + Scripts are simply a working POC and written to only support TAXII 1.1  
