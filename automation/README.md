@@ -1,27 +1,27 @@
-####DISCLAIMER
->>ANY DOWNLOAD AND USE OF THIS UNSUPPORTED SOFTWARE PROGRAM PRODUCT IS DONE AT
->>THE USERS OWN RISK AND THE USER WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO
->>– WITHOUT LIMITATION – ANY COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM
->>SUCH ACTIVITIES. SHOULD IT PROVE DEFECTIVE,     USER ASSUMES THE COST OF ALL
->>NECESSARY SERVICING, REPAIR AND/OR CORRECTION.     IT IS THEREFORE UP TO THE
->>USER TO TAKE ADEQUATE PRECAUTION AGAINST POSSIBLE DAMAGES     RESULTING FROM
->>THIS UNSUPPORTED SOFTWARE.                                                 
+##DISCLAIMER
+```bash
+         ANY DOWNLOAD AND USE OF THIS UNSUPPORTED SOFTWARE PROGRAM PRODUCT IS DONE AT
+         THE USERS OWN RISK AND THE USER WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO
+         – WITHOUT LIMITATION – ANY COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM
+         SUCH ACTIVITIES. SHOULD IT PROVE DEFECTIVE,     USER ASSUMES THE COST OF ALL
+         NECESSARY SERVICING, REPAIR AND/OR CORRECTION.     IT IS THEREFORE UP TO THE
+         USER TO TAKE ADEQUATE PRECAUTION AGAINST POSSIBLE DAMAGES     RESULTING FROM
+         THIS UNSUPPORTED SOFTWARE.
+         ```
 
- 
-        Description: Simple set of scripts to automate AIS data pulls into MISP to enable:
-        
-        + Quick correlation, taxonomy tagging, visualization and review of data.       
-        + Automation can also be used as standalone scripts                          
-        + *Scripts are simply a working POC and written to only support TAXII 1.1*    
-
-                                     _____  .___  _________                           
-                                    /  _  \ |   |/   _____/                           
-                                   /  /_\  \|   |\_____  \                            
-                                  /    |    \   |/        \                           
-                                  \____|__  /___/___v1.0_  /                          
-                                          \/            \/                            
-                                                    AIS Automation
-                                                    Author: Cory Kennedy (@corykennedy)
+####Description: Simple set of scripts to automate AIS data pulls into MISP to enable 
+```bash        
+Automation to support the quick correlation, tagging, and visualization of AIS data.   
+   _____  .___  _________           
+  /  _  \ |   |/   _____/                           
+ /  /_\  \|   |\_____  \                            
+/    |    \   |/        \    Author: Cory Kennedy (@corykennedy)                       
+\____|__  /___/___v1.0_  /                          
+        \/            \/                            
+                   
+                           + Automation can also be used as standalone scripts                          
+                           + Scripts are simply a working POC and written to only support TAXII 1.1  
+```
                                                     
 ##Dependancies
 ```bash
