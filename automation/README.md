@@ -6,27 +6,27 @@
  NECESSARY SERVICING, REPAIR AND/OR CORRECTION.     IT IS THEREFORE UP TO THE
  USER TO TAKE ADEQUATE PRECAUTION AGAINST POSSIBLE DAMAGES     RESULTING FROM
  THIS UNSUPPORTED SOFTWARE.*                                                 
- ------------------------------DISCLAIMER-------------------------------------
+
  Description: Simple set of scripts to automate AIS data pulls into MISP to   
  enable quick correlation, taxonomy tagging and review of data.               
  Automation can also be used as standalone scripts                            
  Scripts are simply a working POC and written to only support TAXII 1.1       
  Author: Cory Kennedy (@corykennedy)                                          
-                             _____  .___  _________                           
+
+                         ``` _____  .___  _________                           
                             /  _  \ |   |/   _____/                           
                            /  /_\  \|   |\_____  \                            
                           /    |    \   |/        \                           
                           \____|__  /___/___v1.0_  /                          
                                   \/            \/                            
-                                      AIS Automation                          
-==============================================================================
-                        -=[Instructions Summary]=-                            
+                                      AIS Automation
+                         ```                                   
+- Installation Summary
+.. Install scripts & crontabs onto your MISP and Flare servers               
+.. Need help with crontabs?  Try: https://crontab.guru/                   
+.. The below will execute the scripts at 2:30am daily and log all output
 
-  * Install scripts & crontabs onto your MISP and Flare servers               
-     * Need help with crontabs?  Try: https://crontab.guru/                   
-     * The below will execute the scripts at 2:30am daily and log all output  
 
-==============================================================================
                             -=[Dependancies]=-                                
                           1. Active AIS Participation                         
                              * https://www.us-cert.gov/ais                    
