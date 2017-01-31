@@ -11,8 +11,7 @@
  
  + Quick correlation, taxonomy tagging, visualization and review of data.               
  + Automation can also be used as standalone scripts                            
- + *Scripts are simply a working POC and written to only support TAXII 1.1*       
- + Author: Cory Kennedy (@corykennedy)                                          
+ + *Scripts are simply a working POC and written to only support TAXII 1.1*                             
 
                                    _____  .___  _________                           
                                   /  _  \ |   |/   _____/                           
@@ -21,6 +20,7 @@
                                 \____|__  /___/___v1.0_  /                          
                                         \/            \/                            
                                                   AIS Automation
+                                                  Author: Cory Kennedy (@corykennedy)
                                                          
 - Installation Summary
 .. Install scripts & crontabs onto your MISP and Flare servers               
