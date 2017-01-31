@@ -23,52 +23,58 @@
                                                     AIS Automation
                                                     Author: Cory Kennedy (@corykennedy)
                                                     
-##[Dependancies]
+##Dependancies
 ```bash
-- Active AIS Participation | https://www.us-cert.gov/ais                    
-- Working Flare instance                           
-- Working MISP instance                            
-- Working CTI-Toolkit on MISP server | https://github.com/certau/cti-toolkit.git
+       + Active AIS Participation | https://www.us-cert.gov/ais                    
+       + Working Flare instance   | https://github.com/bcmc/oss
+       + Working MISP instance    | https://github.com/MISP/MISP                      
+       + Working CTI-Toolkit      | https://github.com/certau/cti-toolkit.git (Installed on MISP server)
 ```
                              
-##[Installation Summary]
+##Installation Summary
 ```bash
 - Install scripts & crontabs onto your MISP and Flare servers               
 - Need help with crontabs?  Try: https://crontab.guru/                   
 - The below will execute the scripts at 2:30am daily and log all output
 ```
                                
-##[FLARE Script Installation]
+##FLARE Script Installation
 ```bash
 1. git clone -b Automation --single-branch https://github.com/NoDataFound/oss.git oss-automation
 2. Move scripts from oss-automation/scripts/flare to your flare server.
             * Example: mv oss-automation/scripts/flare/* /opt/Flare/scripts/
 3. Install crontabs
 ```
-###[FLARE Crontab Installation]
+###FLARE Crontab Installation
 ```bash
 1. From a terminal type: crontab -e
+
 2. Copy and paste the below into your crontab
-30 2 * * * /opt/Flare/scripts/CISCP.sh &>/opt/Flare/scripts/logs/CISCP_`date +\%y-\%m-\%d`.out
-32 2 * * * /opt/Flare/scripts/AIS.sh &>/opt/Flare/scripts/logs/AIS_`date +\%y-\%m-\%d`.out
+      30 2 * * * /opt/Flare/scripts/CISCP.sh &>/opt/Flare/scripts/logs/CISCP_`date +\%y-\%m-\%d`.out
+      32 2 * * * /opt/Flare/scripts/AIS.sh &>/opt/Flare/scripts/logs/AIS_`date +\%y-\%m-\%d`.out
+      
 3. Save crontab
 ```
 Flare server is complete. Proceed to MISP
 
-##[MISP Script Installation]
+##MISP Script Installation
 
 ```bash
 1. git clone -b Automation --single-branch https://github.com/NoDataFound/oss.git oss-automation
+
 2. Move scripts from oss-automation/scripts/misp to your MISP server
             * Example: mv oss-automation/scripts/misp/* /home/misp/scripts/
+            
 3. Install crontabs
 ```
 
-###[MISP Crontab Installation]
+###MISP Crontab Installation
 ```bash
 1. From a terminal type: crontab -e
+
 2. Copy and paste the below into your crontab
-30 2 * * * /home/misp/scripts/MISP.sh
+      30 2 * * * /home/misp/scripts/MISP.sh
+      
 3. Save crontab
 ```
 Note: MISP server is complete!
