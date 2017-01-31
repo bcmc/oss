@@ -78,7 +78,7 @@ Step 3: Install crontabs
 
     export VISUAL=nano; crontab -e
 
-Example  - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
+Example  - GNU nano 2.3.1                    File: /tmp/crontab.mispautomation
 
     30 2 * * * /home/misp/scripts/MISP.sh
 
