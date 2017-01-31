@@ -1,4 +1,4 @@
-#####DISCLAIMER
+####DISCLAIMER
 
                   ANY DOWNLOAD AND USE OF THIS UNSUPPORTED SOFTWARE PROGRAM PRODUCT IS DONE AT
                   THE USERS OWN RISK AND THE USER WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO
@@ -25,10 +25,10 @@
                                                     
 ##Dependancies
 ```bash
-       + Active AIS Participation | https://www.us-cert.gov/ais                    
-       + Working Flare instance   | https://github.com/bcmc/oss
-       + Working MISP instance    | https://github.com/MISP/MISP                      
-       + Working CTI-Toolkit      | https://github.com/certau/cti-toolkit.git (Installed on MISP server)
+            + Active AIS Participation | https://www.us-cert.gov/ais                    
+            + Working Flare instance   | https://github.com/bcmc/oss
+            + Working MISP instance    | https://github.com/MISP/MISP                      
+            + Working CTI-Toolkit      | https://github.com/certau/cti-toolkit.git (Installed on MISP server)
 ```
                              
 ##Installation Summary
@@ -40,52 +40,48 @@
                                
 ##FLARE Installation
 
-Step 1:
+Step 1: GIT the automation branch
 
-      ```bash
       git clone -b Automation --single-branch https://github.com/NoDataFound/oss.git oss-automation
-      ```
+
 Step 2:  Move scripts from oss-automation/scripts/flare to your flare server
   Example: 
-    
-    ```bash
+```bash    
     mv oss-automation/scripts/flare/* /opt/Flare/scripts/
-    ```
+```
     
 Step 3: Install crontabs
-  ```bash
+
     export VISUAL=nano; crontab -e
-    ```
+
 Example filename - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
-```bash
-      30 2 * * * /opt/Flare/scripts/CISCP.sh &>/opt/Flare/scripts/logs/CISCP_`date +\%y-\%m-\%d`.out
-      32 2 * * * /opt/Flare/scripts/AIS.sh &>/opt/Flare/scripts/logs/AIS_`date +\%y-\%m-\%d`.out
-```
+
+     30 2 * * * /opt/Flare/scripts/CISCP.sh &>/opt/Flare/scripts/logs/CISCP_`date +\%y-\%m-\%d`.out
+     32 2 * * * /opt/Flare/scripts/AIS.sh &>/opt/Flare/scripts/logs/AIS_`date +\%y-\%m-\%d`.out
+
 Save with ctrl + x
 
 ###### Flare server is complete. Proceed to MISP
 
 ##MISP Installation
-Step 1:
 
-      ```bash
+Step 1: GIT the automation branch
+
       git clone -b Automation --single-branch https://github.com/NoDataFound/oss.git oss-automation
-      ```
+
 Step 2:  Move scripts from oss-automation/scripts/misp to your MISP server
   Example: 
     
-    ```bash
-    mv oss-automation/scripts/misp/* /home/misp/scripts/
-    ```
-    
+      mv oss-automation/scripts/misp/* /home/misp/scripts/
+
 Step 3: Install crontabs
-  ```bash
+
     export VISUAL=nano; crontab -e
-    ```
+
 Example filename - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
-```bash
-      30 2 * * * /home/misp/scripts/MISP.sh
-```
+
+    30 2 * * * /home/misp/scripts/MISP.sh
+
 Save with ctrl + x
 
 ###### MISP server is complete! YOU ARE DONE!
