@@ -38,44 +38,55 @@
 - The below will execute the scripts at 2:30am daily and log all output
 ```
                                
-##FLARE Script Installation
-```bash
-1. git clone -b Automation --single-branch https://github.com/NoDataFound/oss.git oss-automation
-2. Move scripts from oss-automation/scripts/flare to your flare server.
-            * Example: mv oss-automation/scripts/flare/* /opt/Flare/scripts/
-3. Install crontabs
-```
-###FLARE Crontab Installation
-```bash
-1. From a terminal type: crontab -e
+##FLARE Installation
 
-2. Copy and paste the below into your crontab
+Step 1:
+
+      ```bash
+      git clone -b Automation --single-branch https://github.com/NoDataFound/oss.git oss-automation
+      ```
+Step 2:  Move scripts from oss-automation/scripts/flare to your flare server
+  Example: 
+    
+    ```bash
+    mv oss-automation/scripts/flare/* /opt/Flare/scripts/
+    ```
+    
+Step 3: Install crontabs
+  ```bash
+    export VISUAL=nano; crontab -e
+    ```
+Example filename - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
+```bash
       30 2 * * * /opt/Flare/scripts/CISCP.sh &>/opt/Flare/scripts/logs/CISCP_`date +\%y-\%m-\%d`.out
       32 2 * * * /opt/Flare/scripts/AIS.sh &>/opt/Flare/scripts/logs/AIS_`date +\%y-\%m-\%d`.out
-      
-3. Save crontab
 ```
-Flare server is complete. Proceed to MISP
+Save with ctrl + x
 
-##MISP Script Installation
+###### Flare server is complete. Proceed to MISP
 
+##MISP Installation
+Step 1:
+
+      ```bash
+      git clone -b Automation --single-branch https://github.com/NoDataFound/oss.git oss-automation
+      ```
+Step 2:  Move scripts from oss-automation/scripts/misp to your MISP server
+  Example: 
+    
+    ```bash
+    mv oss-automation/scripts/misp/* /home/misp/scripts/
+    ```
+    
+Step 3: Install crontabs
+  ```bash
+    export VISUAL=nano; crontab -e
+    ```
+Example filename - GNU nano 2.3.1                    File: /tmp/crontab.aisautomation
 ```bash
-1. git clone -b Automation --single-branch https://github.com/NoDataFound/oss.git oss-automation
-
-2. Move scripts from oss-automation/scripts/misp to your MISP server
-            * Example: mv oss-automation/scripts/misp/* /home/misp/scripts/
-            
-3. Install crontabs
-```
-
-###MISP Crontab Installation
-```bash
-1. From a terminal type: crontab -e
-
-2. Copy and paste the below into your crontab
       30 2 * * * /home/misp/scripts/MISP.sh
-      
-3. Save crontab
 ```
-Note: MISP server is complete!
+Save with ctrl + x
+
+###### MISP server is complete! YOU ARE DONE!
 
