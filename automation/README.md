@@ -9,7 +9,8 @@
          THIS UNSUPPORTED SOFTWARE.
          ```
 
-####Description: Simple set of scripts to automate AIS data pulls into MISP to enable 
+####Description
+
 ```bash        
 Automation to support the quick correlation, tagging, and visualization of AIS data.   
    _____  .___  _________           
