@@ -1,17 +1,18 @@
-###DISCLAIMER
- *ANY DOWNLOAD AND USE OF THIS UNSUPPORTED SOFTWARE PROGRAM PRODUCT IS DONE AT
- THE USERS OWN RISK AND THE USER WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO
- – WITHOUT LIMITATION – ANY COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM
- SUCH ACTIVITIES. SHOULD IT PROVE DEFECTIVE,     USER ASSUMES THE COST OF ALL
- NECESSARY SERVICING, REPAIR AND/OR CORRECTION.     IT IS THEREFORE UP TO THE
- USER TO TAKE ADEQUATE PRECAUTION AGAINST POSSIBLE DAMAGES     RESULTING FROM
- THIS UNSUPPORTED SOFTWARE.*                                                 
+####DISCLAIMER
+>*ANY DOWNLOAD AND USE OF THIS UNSUPPORTED SOFTWARE PROGRAM PRODUCT IS DONE AT
+>THE USERS OWN RISK AND THE USER WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO
+>– WITHOUT LIMITATION – ANY COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM
+>SUCH ACTIVITIES. SHOULD IT PROVE DEFECTIVE,     USER ASSUMES THE COST OF ALL
+>NECESSARY SERVICING, REPAIR AND/OR CORRECTION.     IT IS THEREFORE UP TO THE
+>USER TO TAKE ADEQUATE PRECAUTION AGAINST POSSIBLE DAMAGES     RESULTING FROM
+>THIS UNSUPPORTED SOFTWARE.*                                                 
 
- Description: Simple set of scripts to automate AIS data pulls into MISP to   
- enable quick correlation, taxonomy tagging and review of data.               
- Automation can also be used as standalone scripts                            
- Scripts are simply a working POC and written to only support TAXII 1.1       
- Author: Cory Kennedy (@corykennedy)                                          
+ Description: Simple set of scripts to automate AIS data pulls into MISP to enable:
+ 
+ + Quick correlation, taxonomy tagging, visualization and review of data.               
+ + Automation can also be used as standalone scripts                            
+ + *Scripts are simply a working POC and written to only support TAXII 1.1*       
+ + Author: Cory Kennedy (@corykennedy)                                          
 
                          ``` _____  .___  _________                           
                             /  _  \ |   |/   _____/                           
