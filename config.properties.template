@@ -1,5 +1,5 @@
 # general
-clientVersion=2.0.3
+clientVersion=2.0.4
 connectingToFLARE=true
 taxii10NS=http\://taxii.mitre.org/messages/taxii_xml_binding-1
 taxii11NS=http\://taxii.mitre.org/messages/taxii_xml_binding-1.1
