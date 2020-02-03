@@ -1,4 +1,14 @@
 package com.bcmcgroup.taxii11;
+/*
+© 2015-2020 BCMC. Funding for this work was provided by the United States Government 
+under contract GS06F1165Z/HSHQDC14F00094. The United States Government may use, 
+disclose, reproduce, prepare derivative works, distribute copies to the public, 
+and perform publicly and display publicly, in any manner and for any purpose, 
+and to have or permit others to do so.
+
+Please be advised that this project uses other open source software and uses of 
+these software or their components must follow their respective license.
+*/
 
 import java.io.IOException;
 import java.net.MalformedURLException;
