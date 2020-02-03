@@ -1,19 +1,14 @@
 package com.bcmcgroup.taxii10;
 
 /*
-Copyright 2014 BCMC
+© 2015-2020 BCMC. Funding for this work was provided by the United States Government 
+under contract GS06F1165Z/HSHQDC14F00094. The United States Government may use, 
+disclose, reproduce, prepare derivative works, distribute copies to the public, 
+and perform publicly and display publicly, in any manner and for any purpose, 
+and to have or permit others to do so.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Please be advised that this project uses other open source software and uses of 
+these software or their components must follow their respective license.
 */
 
 import java.io.IOException;
