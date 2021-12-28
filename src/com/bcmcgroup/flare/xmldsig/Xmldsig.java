@@ -42,7 +42,7 @@ import javax.xml.crypto.dsig.spec.C14NMethodParameterSpec;
 import javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
 import javax.xml.crypto.dsig.spec.TransformParameterSpec;
 import org.apache.commons.codec.binary.Base64;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -56,7 +56,7 @@ import com.bcmcgroup.flare.xmldsig.MyURIDereferencer;
  * @version		2.0.4
  */
 public class Xmldsig {
-	private static final Logger logger = Logger.getLogger(Xmldsig.class);
+	private static final Logger logger = LogManager.getLogger(Xmldsig.class);
 	private static final String RSA_SHA256_URI = "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256";
 
     /**

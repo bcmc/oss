@@ -11,7 +11,7 @@ Please be advised that this project uses other open source software and uses of
 these software or their components must follow their respective license.
 */
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 /**
  * Utility class for encrypting strings to be used in particular key-value pairs in config properties
@@ -20,7 +20,7 @@ import org.apache.log4j.Logger;
 
 class Hash {
 
-    private static final Logger logger = Logger.getLogger(Hash.class);
+    private static final Logger logger = LogManager.getLogger(Hash.class);
 
     /**
      * the main method to run for encryption of plaintext, the result value will be

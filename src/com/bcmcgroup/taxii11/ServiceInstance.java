@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -26,7 +26,7 @@ import com.bcmcgroup.flare.client.ClientUtil;
 	 * Used to construct a Service_Instance object for a Discovery_Response
 	 */
 	class ServiceInstance {
-		private static final Logger logger = Logger.getLogger(ServiceInstance.class);
+		private static final Logger logger = LogManager.getLogger(ServiceInstance.class);
 		private static final String taxiiQueryNS = "http://taxii.mitre.org/query/taxii_default_query-1";
 		private final String serviceType;
 		private String serviceVersion;

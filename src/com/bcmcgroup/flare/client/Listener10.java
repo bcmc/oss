@@ -13,7 +13,7 @@ these software or their components must follow their respective license.
 
 import com.bcmcgroup.taxii10.StatusMessage;
 import com.sun.net.httpserver.*;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -32,7 +32,7 @@ import java.util.Properties;
 
 class Listener10 {
 
-    private static final Logger logger = Logger.getLogger(Listener10.class);
+    private static final Logger logger = LogManager.getLogger(Listener10.class);
 
     public class MyHandler implements HttpHandler {
         public final DocumentBuilder db;

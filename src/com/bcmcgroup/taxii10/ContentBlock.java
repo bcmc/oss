@@ -20,7 +20,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
 import javax.xml.parsers.DocumentBuilder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -32,7 +32,7 @@ import com.bcmcgroup.flare.client.ClientUtil;
  * @version		2.0.4
  */
 public class ContentBlock {
-	private static final Logger logger = Logger.getLogger(ContentBlock.class);
+	private static final Logger logger = LogManager.getLogger(ContentBlock.class);
 
 	private static final int DEFAULT_BUFFER_SIZE = 65536;  // TODO may want to mess with this number to see how it affects performance
 	private final String content_binding;

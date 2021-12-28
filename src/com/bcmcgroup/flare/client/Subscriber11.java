@@ -14,7 +14,7 @@ these software or their components must follow their respective license.
 import com.bcmcgroup.flare.xmldsig.Xmldsig;
 import com.bcmcgroup.taxii11.TaxiiUtil;
 import com.bcmcgroup.taxii11.TaxiiUtil.PollParameters;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
@@ -35,7 +35,7 @@ import java.util.Properties;
  * @version 2.0.3
  */
 public class Subscriber11 {
-    private static final Logger logger = Logger.getLogger(Subscriber11.class);
+    private static final Logger logger = LogManager.getLogger(Subscriber11.class);
 
     private static final Properties config = ClientUtil.loadProperties();
     private static final String trustStorePassword;

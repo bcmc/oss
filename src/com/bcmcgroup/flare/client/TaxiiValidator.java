@@ -10,7 +10,7 @@ these software or their components must follow their respective license.
 */
 package com.bcmcgroup.flare.client;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.mitre.stix.validator.SchemaError;
 import org.w3c.dom.Document;
 import org.xml.sax.ErrorHandler;
@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class TaxiiValidator {
-    private static final Logger logger = Logger.getLogger(TaxiiValidator.class);
+    private static final Logger logger = LogManager.getLogger(TaxiiValidator.class);
     private Schema schema;
 
     public TaxiiValidator() throws SAXException {

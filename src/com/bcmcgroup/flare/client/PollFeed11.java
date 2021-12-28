@@ -1,6 +1,6 @@
 package com.bcmcgroup.flare.client;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -22,7 +22,7 @@ these software or their components must follow their respective license.
  */
 class PollFeed11 {
 
-    private static final Logger logger = Logger.getLogger(PollFeed11.class);
+    private static final Logger logger = LogManager.getLogger(PollFeed11.class);
 
     public static void main(String[] args) throws IOException {
         String collectionName = null, bTime = null, eTime = null;
