@@ -30,15 +30,15 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.17.0</version>
+            <version>2.17.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.17.0</version>
+            <version>2.17.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.santuario/xmlsec Not sure if this is the right one-->
+        <!-- https://mvnrepository.com/artifact/org.apache.santuario/xmlsec -->
         <dependency>
             <groupId>org.apache.santuario</groupId>
             <artifactId>xmlsec</artifactId>
@@ -46,7 +46,7 @@
         </dependency>
 
 
-    <!--  These jars couldn't be found in the central maven repo so use the jars in the lib folder      -->
+    <!--  These jars couldn't be found in the central maven repo so use the jars in the lib folder -->
         <!-- https://mvnrepository.com/artifact/org.mozilla/juniversalchardet -->
         <dependency>
             <groupId>org.mozilla</groupId>
@@ -54,6 +54,14 @@
             <version>1.0.3</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/juniversalchardet-1.0.3.jar</systemPath>
+        </dependency>
+        <!-- Couldn't find in maven repo. May be included in jdk -->
+        <dependency>
+            <groupId>org.xml</groupId>
+            <artifactId>sax2</artifactId>
+            <version>2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/sax2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.mitre.stix.validator</groupId>
@@ -63,7 +71,7 @@
             <systemPath>${project.basedir}/lib/STIX_Validator.jar</systemPath>
         </dependency>
 
-        <!--Test jars-->
+        <!--Test jars (unused) -->
         <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core (deprecated, use "hamcrest" instead)-->
 <!--        <dependency>-->
 <!--            <groupId>org.hamcrest</groupId>-->
