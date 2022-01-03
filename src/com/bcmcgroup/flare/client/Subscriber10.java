@@ -13,7 +13,7 @@ these software or their components must follow their respective license.
 
 import com.bcmcgroup.flare.xmldsig.Xmldsig;
 import com.bcmcgroup.taxii10.TaxiiUtil;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
@@ -37,7 +37,7 @@ import java.util.Set;
  * @version 2.0.3
  */
 public class Subscriber10 {
-    private static final Logger logger = Logger.getLogger(Subscriber10.class);
+    private static final Logger logger = LogManager.getLogger(Subscriber10.class);
 
     private static final Properties config = ClientUtil.loadProperties();
     private static final String pathToTrustStore;

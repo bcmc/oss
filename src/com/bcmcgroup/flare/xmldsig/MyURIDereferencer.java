@@ -25,7 +25,7 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.apache.jcp.xml.dsig.internal.dom.DOMSubTreeData;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -38,7 +38,7 @@ import com.bcmcgroup.flare.xmldsig.MyURIDereferencer;
  */
 
 class MyURIDereferencer implements URIDereferencer {
-	private static final Logger logger = Logger.getLogger(MyURIDereferencer.class);
+	private static final Logger logger = LogManager.getLogger(MyURIDereferencer.class);
 	private Node node = null;
     private final List<Node> l = new ArrayList<>();
 

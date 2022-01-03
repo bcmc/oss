@@ -22,7 +22,7 @@ import java.util.Set;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.xml.parsers.DocumentBuilder;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -31,7 +31,7 @@ import com.bcmcgroup.flare.client.Subscriber10;
 
 public class TaxiiUtil {
 	
-	private static final Logger logger = Logger.getLogger(Subscriber10.class);
+	private static final Logger logger = LogManager.getLogger(Subscriber10.class);
 	private static final Properties config = ClientUtil.loadProperties();
 	private static final String taxiiNS = config.getProperty("taxii10NS");
 	

@@ -18,7 +18,7 @@ import org.apache.commons.io.monitor.FileAlterationListener;
 import org.apache.commons.io.monitor.FileAlterationListenerAdaptor;
 import org.apache.commons.io.monitor.FileAlterationMonitor;
 import org.apache.commons.io.monitor.FileAlterationObserver;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -37,7 +37,7 @@ import java.util.Properties;
  */
 class PublisherOutbox10 {
 
-    private static final Logger logger = Logger.getLogger(PublisherOutbox10.class);
+    private static final Logger logger = LogManager.getLogger(PublisherOutbox10.class);
 
     private static final Properties config = ClientUtil.loadProperties();
     private static final String pathToPublisherKeyStore;

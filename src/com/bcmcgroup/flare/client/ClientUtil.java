@@ -9,7 +9,7 @@ Please be advised that this project uses other open source software and uses of 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.mitre.stix.validator.SchemaError;
 import org.mitre.stix.validator.StixValidator;
 import org.w3c.dom.*;
@@ -47,7 +47,7 @@ import java.util.Properties;
 
 public class ClientUtil {
 
-    private static final Logger logger = Logger.getLogger(ClientUtil.class);
+    private static final Logger logger = LogManager.getLogger(ClientUtil.class);
     private static final char[] seeds = "enfldsgbnlsngdlksdsgm".toCharArray();
     private static final byte[] ivBytes = "0102030405060708".getBytes();
     private static final String salt = "a9v5n38s";
@@ -120,6 +120,7 @@ public class ClientUtil {
             return stringWriter.toString();
         } catch (TransformerException e) {
             logger.error("Transformer Exception when attempting to convert a document to a string. ");
+//            logger.error("Transformer Exception when attempting to convert a document to a string: {}", e.getMessage());
         }
         return null;
     }
@@ -403,7 +404,8 @@ public class ClientUtil {
             inputStream = new FileInputStream("config.properties");
             config.load(inputStream);
         } catch (IOException e) {
-            logger.error("IOException when attempting to load config properties. ");
+            logger.error("IOException when attempting to load config properties: " + e.getMessage());
+            //system.exit?
         } finally {
             try {
                 if (inputStream != null) {

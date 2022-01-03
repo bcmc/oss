@@ -26,7 +26,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -37,7 +37,7 @@ import com.sun.net.httpserver.HttpExchange;
  * @version		2.0.4
  */
 public class StatusMessage {
-	private static final Logger logger = Logger.getLogger(StatusMessage.class);
+	private static final Logger logger = LogManager.getLogger(StatusMessage.class);
 	private final String msgId;
 	private final String inResponseTo;
 	private final String statusType;

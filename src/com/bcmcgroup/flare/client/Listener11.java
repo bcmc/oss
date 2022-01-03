@@ -51,7 +51,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -63,7 +63,7 @@ import org.xml.sax.SAXException;
  */
 class Listener11 {
 
-    private static final Logger logger = Logger.getLogger(Listener11.class);
+    private static final Logger logger = LogManager.getLogger(Listener11.class);
 
     public class MyHandler implements HttpHandler {
         public final DocumentBuilder db;
